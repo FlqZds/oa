@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @Data
-public class StringUtils {
+public class strUtil {
 
     private static String Uuid;
 
@@ -110,8 +110,8 @@ public class StringUtils {
      */
     public static long differenceInMinutes(String t1, String t2) throws ParseException {
 
-        Date firstDate = StringUtils.strToDate(t1);
-        Date secondDate = StringUtils.strToDate(t2);
+        Date firstDate = strUtil.strToDate(t1);
+        Date secondDate = strUtil.strToDate(t2);
 
         Calendar c1 = Calendar.getInstance();
         c1.setTime(firstDate);

@@ -1,58 +1,30 @@
 package com.fcfz.oa.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Log {
-    private Integer userId;
-
     private Integer logId;
 
-    private String logContent;
+    private String logTitle="默认标题";
 
-    private Date logTime;
+    private String logUploadfilepath;
+
+    private Integer userId;
 
     private Integer roleId;
 
-    public Integer getUserId() {
-        return userId;
-    }
+    private String logContent;
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+//    日志提交时间
+    private Date logTime;
 
-    public Integer getLogId() {
-        return logId;
-    }
-
-    public void setLogId(Integer logId) {
-        this.logId = logId;
-    }
-
-    public String getLogContent() {
-        return logContent;
-    }
-
-    public void setLogContent(String logContent) {
-        this.logContent = logContent == null ? null : logContent.trim();
-    }
-
-    public Date getLogTime() {
-        return logTime;
-    }
-
-    public void setLogTime(Date logTime) {
-        this.logTime = logTime;
-    }
-
-    public Integer getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
-    }
 }

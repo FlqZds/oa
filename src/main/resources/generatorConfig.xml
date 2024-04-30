@@ -52,11 +52,5 @@
         <table schema="" tableName="oa.log"></table>
         <table schema="" tableName="oa.role"></table>
         <table schema="" tableName="oa.user"></table>
-        <!--        <table schema="" tableName="film.movie"></table>-->
-        <!--        <table schema="" tableName="film.hall"></table>-->
-        <!--        <table schema="" tableName="film.seat"></table>-->
-        <!--                        <table schema="" tableName="film.ticket"></table>-->
-        <!--       <table schema="" tableName="film.user"></table>-->
-        <!--                <table schema="" tableName="film.order"></table>-->
     </context>
 </generatorConfiguration>

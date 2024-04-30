@@ -21,6 +21,7 @@ public class CONSFilter implements Filter {
         httpServletResponse.setHeader("Access-Control-Allow-Methods", "POST,GET,PUT");
         httpServletResponse.setHeader("Access-Control-Max-Age", "3600");
 
+
         response.setContentType("text/html;charset=utf-8");
 
         chain.doFilter(request, response);

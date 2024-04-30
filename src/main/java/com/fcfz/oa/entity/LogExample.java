@@ -105,6 +105,206 @@ public class LogExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
+        public Criteria andLogIdIsNull() {
+            addCriterion("log_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdIsNotNull() {
+            addCriterion("log_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdEqualTo(Integer value) {
+            addCriterion("log_id =", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdNotEqualTo(Integer value) {
+            addCriterion("log_id <>", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdGreaterThan(Integer value) {
+            addCriterion("log_id >", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("log_id >=", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdLessThan(Integer value) {
+            addCriterion("log_id <", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdLessThanOrEqualTo(Integer value) {
+            addCriterion("log_id <=", value, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdIn(List<Integer> values) {
+            addCriterion("log_id in", values, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdNotIn(List<Integer> values) {
+            addCriterion("log_id not in", values, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdBetween(Integer value1, Integer value2) {
+            addCriterion("log_id between", value1, value2, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("log_id not between", value1, value2, "logId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleIsNull() {
+            addCriterion("log_title is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleIsNotNull() {
+            addCriterion("log_title is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleEqualTo(String value) {
+            addCriterion("log_title =", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleNotEqualTo(String value) {
+            addCriterion("log_title <>", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleGreaterThan(String value) {
+            addCriterion("log_title >", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleGreaterThanOrEqualTo(String value) {
+            addCriterion("log_title >=", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleLessThan(String value) {
+            addCriterion("log_title <", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleLessThanOrEqualTo(String value) {
+            addCriterion("log_title <=", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleLike(String value) {
+            addCriterion("log_title like", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleNotLike(String value) {
+            addCriterion("log_title not like", value, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleIn(List<String> values) {
+            addCriterion("log_title in", values, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleNotIn(List<String> values) {
+            addCriterion("log_title not in", values, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleBetween(String value1, String value2) {
+            addCriterion("log_title between", value1, value2, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogTitleNotBetween(String value1, String value2) {
+            addCriterion("log_title not between", value1, value2, "logTitle");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathIsNull() {
+            addCriterion("log_uploadFilePath is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathIsNotNull() {
+            addCriterion("log_uploadFilePath is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathEqualTo(String value) {
+            addCriterion("log_uploadFilePath =", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathNotEqualTo(String value) {
+            addCriterion("log_uploadFilePath <>", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathGreaterThan(String value) {
+            addCriterion("log_uploadFilePath >", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathGreaterThanOrEqualTo(String value) {
+            addCriterion("log_uploadFilePath >=", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathLessThan(String value) {
+            addCriterion("log_uploadFilePath <", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathLessThanOrEqualTo(String value) {
+            addCriterion("log_uploadFilePath <=", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathLike(String value) {
+            addCriterion("log_uploadFilePath like", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathNotLike(String value) {
+            addCriterion("log_uploadFilePath not like", value, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathIn(List<String> values) {
+            addCriterion("log_uploadFilePath in", values, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathNotIn(List<String> values) {
+            addCriterion("log_uploadFilePath not in", values, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathBetween(String value1, String value2) {
+            addCriterion("log_uploadFilePath between", value1, value2, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogUploadfilepathNotBetween(String value1, String value2) {
+            addCriterion("log_uploadFilePath not between", value1, value2, "logUploadfilepath");
+            return (Criteria) this;
+        }
+
         public Criteria andUserIdIsNull() {
             addCriterion("user_id is null");
             return (Criteria) this;
@@ -165,63 +365,63 @@ public class LogExample {
             return (Criteria) this;
         }
 
-        public Criteria andLogIdIsNull() {
-            addCriterion("log_id is null");
+        public Criteria andRoleIdIsNull() {
+            addCriterion("role_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdIsNotNull() {
-            addCriterion("log_id is not null");
+        public Criteria andRoleIdIsNotNull() {
+            addCriterion("role_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdEqualTo(Integer value) {
-            addCriterion("log_id =", value, "logId");
+        public Criteria andRoleIdEqualTo(Integer value) {
+            addCriterion("role_id =", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdNotEqualTo(Integer value) {
-            addCriterion("log_id <>", value, "logId");
+        public Criteria andRoleIdNotEqualTo(Integer value) {
+            addCriterion("role_id <>", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdGreaterThan(Integer value) {
-            addCriterion("log_id >", value, "logId");
+        public Criteria andRoleIdGreaterThan(Integer value) {
+            addCriterion("role_id >", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("log_id >=", value, "logId");
+        public Criteria andRoleIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("role_id >=", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdLessThan(Integer value) {
-            addCriterion("log_id <", value, "logId");
+        public Criteria andRoleIdLessThan(Integer value) {
+            addCriterion("role_id <", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdLessThanOrEqualTo(Integer value) {
-            addCriterion("log_id <=", value, "logId");
+        public Criteria andRoleIdLessThanOrEqualTo(Integer value) {
+            addCriterion("role_id <=", value, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdIn(List<Integer> values) {
-            addCriterion("log_id in", values, "logId");
+        public Criteria andRoleIdIn(List<Integer> values) {
+            addCriterion("role_id in", values, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdNotIn(List<Integer> values) {
-            addCriterion("log_id not in", values, "logId");
+        public Criteria andRoleIdNotIn(List<Integer> values) {
+            addCriterion("role_id not in", values, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdBetween(Integer value1, Integer value2) {
-            addCriterion("log_id between", value1, value2, "logId");
+        public Criteria andRoleIdBetween(Integer value1, Integer value2) {
+            addCriterion("role_id between", value1, value2, "roleId");
             return (Criteria) this;
         }
 
-        public Criteria andLogIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("log_id not between", value1, value2, "logId");
+        public Criteria andRoleIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("role_id not between", value1, value2, "roleId");
             return (Criteria) this;
         }
 
@@ -352,66 +552,6 @@ public class LogExample {
 
         public Criteria andLogTimeNotBetween(Date value1, Date value2) {
             addCriterion("log_time not between", value1, value2, "logTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdIsNull() {
-            addCriterion("role_id is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdIsNotNull() {
-            addCriterion("role_id is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdEqualTo(Integer value) {
-            addCriterion("role_id =", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdNotEqualTo(Integer value) {
-            addCriterion("role_id <>", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdGreaterThan(Integer value) {
-            addCriterion("role_id >", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("role_id >=", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdLessThan(Integer value) {
-            addCriterion("role_id <", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdLessThanOrEqualTo(Integer value) {
-            addCriterion("role_id <=", value, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdIn(List<Integer> values) {
-            addCriterion("role_id in", values, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdNotIn(List<Integer> values) {
-            addCriterion("role_id not in", values, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdBetween(Integer value1, Integer value2) {
-            addCriterion("role_id between", value1, value2, "roleId");
-            return (Criteria) this;
-        }
-
-        public Criteria andRoleIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("role_id not between", value1, value2, "roleId");
             return (Criteria) this;
         }
     }

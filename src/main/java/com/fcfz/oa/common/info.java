@@ -13,4 +13,5 @@ public class info<T> {
     private  T data;
 
     private  T userStatus;
+    private  T userId;
 }

@@ -2,15 +2,16 @@ package com.fcfz.oa.mapper;
 
 import com.fcfz.oa.entity.Log;
 import com.fcfz.oa.entity.LogExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface LogMapper {
     int countByExample(LogExample example);
 
     int deleteByExample(LogExample example);
 
-    int deleteByPrimaryKey(Integer userId);
+    int deleteByPrimaryKey(Integer logId);
 
     int insert(Log record);
 
@@ -18,7 +19,9 @@ public interface LogMapper {
 
     List<Log> selectByExample(LogExample example);
 
-    Log selectByPrimaryKey(Integer userId);
+    Log selectByPrimaryKey(Integer logId);
+
+    List<Log> selectAllLogByUserId(@Param("用户id") Integer userId);
 
     int updateByExampleSelective(@Param("record") Log record, @Param("example") LogExample example);
 

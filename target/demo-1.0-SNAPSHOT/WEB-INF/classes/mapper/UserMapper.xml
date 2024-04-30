@@ -159,10 +159,22 @@
         </if>
     </select>
 
-    <select id="selectByUserName" resultType="com.fcfz.oa.entity.User">
+
+
+    <select id="selectByUsercount" resultType="com.fcfz.oa.entity.User">
         select *
         from oa.user
-        where user_name = #{account};
+        where user_count = #{account};
+    </select>
+
+    <select id="selectAllLogByUserId" resultType="com.fcfz.oa.entity.Log">
+        select log.*
+        from user left join log  on user.user_id = log.user_id  where user.user_id = #{userId};
+    </select>
+
+    <select id="selectAllUser" resultType="com.fcfz.oa.entity.User">
+        select *
+        from user;
     </select>
 
     <update id="updateByExampleSelective" parameterType="map">
@@ -233,4 +245,7 @@
             create_time = #{createTime,jdbcType=TIMESTAMP}
         where user_id = #{userId,jdbcType=INTEGER}
     </update>
+
+
+
 </mapper>

@@ -1,5 +1,6 @@
 package com.fcfz.oa.mapper;
 
+import com.fcfz.oa.entity.Log;
 import com.fcfz.oa.entity.User;
 import com.fcfz.oa.entity.UserExample;
 import org.apache.ibatis.annotations.Param;
@@ -21,7 +22,12 @@ public interface UserMapper {
 
     User selectByPrimaryKey(Integer userId);
 
-    User selectByUserName(@Param("account")String userName);
+//    根据userID拿到日志表中对应所有日志信息
+    List<Log> selectAllLogByUserId(Integer userId);
+
+    List<User> selectAllUser();
+
+    User selectByUsercount(@Param("account")String usercount);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 
