@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class userDto {
 
 //    用户状态
-    private String status;
-    private Integer userId;
+    private String userName;
+    private String roleName;
 //    private String token;
 }

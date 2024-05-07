@@ -9,6 +9,7 @@
         <result column="role_id" property="roleId" jdbcType="INTEGER"/>
         <result column="log_content" property="logContent" jdbcType="VARCHAR"/>
         <result column="log_time" property="logTime" jdbcType="TIMESTAMP"/>
+        <result column="log_receiver" property="logReceiver" jdbcType="VARCHAR"/>
     </resultMap>
     <sql id="Example_Where_Clause">
         <where>
@@ -71,7 +72,7 @@
         </where>
     </sql>
     <sql id="Base_Column_List">
-        log_id, log_title, log_uploadFilePath, user_id, role_id, log_content, log_time
+        log_id, log_title, log_uploadFilePath, user_id, role_id, log_content, log_time, log_receiver
     </sql>
     <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.fcfz.oa.entity.LogExample">
         select
@@ -107,10 +108,10 @@
     <insert id="insert" parameterType="com.fcfz.oa.entity.Log">
         insert into log (log_id, log_title, log_uploadFilePath,
                          user_id, role_id, log_content,
-                         log_time)
+                         log_time, log_receiver)
         values (#{logId,jdbcType=INTEGER}, #{logTitle,jdbcType=VARCHAR}, #{logUploadfilepath,jdbcType=VARCHAR},
                 #{userId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, #{logContent,jdbcType=VARCHAR},
-                #{logTime,jdbcType=TIMESTAMP})
+                #{logTime,jdbcType=TIMESTAMP}, #{logReceiver,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" parameterType="com.fcfz.oa.entity.Log">
         insert into log
@@ -136,6 +137,9 @@
             <if test="logTime != null">
                 log_time,
             </if>
+            <if test="logReceiver != null">
+                log_receiver,
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="logId != null">
@@ -158,6 +162,9 @@
             </if>
             <if test="logTime != null">
                 #{logTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="logReceiver != null">
+                #{logReceiver,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
@@ -198,6 +205,9 @@
             <if test="record.logTime != null">
                 log_time = #{record.logTime,jdbcType=TIMESTAMP},
             </if>
+            <if test="record.logReceiver != null">
+                log_receiver = #{record.logReceiver,jdbcType=VARCHAR},
+            </if>
         </set>
         <if test="_parameter != null">
             <include refid="Update_By_Example_Where_Clause"/>
@@ -211,7 +221,8 @@
         user_id = #{record.userId,jdbcType=INTEGER},
         role_id = #{record.roleId,jdbcType=INTEGER},
         log_content = #{record.logContent,jdbcType=VARCHAR},
-        log_time = #{record.logTime,jdbcType=TIMESTAMP}
+        log_time = #{record.logTime,jdbcType=TIMESTAMP},
+        log_receiver = #{record.logReceiver,jdbcType=VARCHAR}
         <if test="_parameter != null">
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
@@ -237,6 +248,9 @@
             <if test="logTime != null">
                 log_time = #{logTime,jdbcType=TIMESTAMP},
             </if>
+            <if test="logReceiver != null">
+                log_receiver = #{logReceiver,jdbcType=VARCHAR},
+            </if>
         </set>
         where log_id = #{logId,jdbcType=INTEGER}
     </update>
@@ -247,7 +261,8 @@
             user_id            = #{userId,jdbcType=INTEGER},
             role_id            = #{roleId,jdbcType=INTEGER},
             log_content        = #{logContent,jdbcType=VARCHAR},
-            log_time           = #{logTime,jdbcType=TIMESTAMP}
+            log_time           = #{logTime,jdbcType=TIMESTAMP},
+            log_receiver       = #{logReceiver,jdbcType=VARCHAR}
         where log_id = #{logId,jdbcType=INTEGER}
     </update>
 </mapper>

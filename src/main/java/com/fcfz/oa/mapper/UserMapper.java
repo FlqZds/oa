@@ -18,16 +18,16 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    List<User> selectByExample(UserExample example);
-
-    User selectByPrimaryKey(Integer userId);
-
-//    根据userID拿到日志表中对应所有日志信息
+    //    根据userID拿到日志表中对应所有日志信息
     List<Log> selectAllLogByUserId(Integer userId);
 
     List<User> selectAllUser();
 
     User selectByUsercount(@Param("account")String usercount);
+
+    List<User> selectByExample(UserExample example);
+
+    User selectByPrimaryKey(Integer userId);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 

@@ -1,16 +1,16 @@
-package com.fcfz.oa.service;
+package com.fcfz.oa.service.impl;
 
-import com.alibaba.fastjson2.JSON;
 import com.fcfz.oa.common.ErrInfo;
 import com.fcfz.oa.common.utils.MySqlSessionFactory;
 import com.fcfz.oa.entity.User;
 import com.fcfz.oa.mapper.UserMapper;
+import com.fcfz.oa.service.i_user;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
-public class selUser {
+public class selUser implements i_user {
 
     public List<User> selectAllUser(String isLogin){
         SqlSession session = MySqlSessionFactory.getSession();

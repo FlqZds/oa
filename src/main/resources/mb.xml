@@ -35,7 +35,10 @@
     <mappers>
         <mapper resource="mapper/LogMapper.xml"/>
         <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/PowerMapper.xml"/>
         <mapper resource="mapper/RoleMapper.xml"/>
+        <mapper resource="mapper/UsertoroleMapper.xml"/>
+        <mapper resource="mapper/RoletopowerMapper.xml"/>
     </mappers>
 </configuration>
 

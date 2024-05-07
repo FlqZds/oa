@@ -17,11 +17,11 @@ public interface LogMapper {
 
     int insertSelective(Log record);
 
+    List<Log> selectAllLogByUserId(@Param("用户id") Integer userId);
+
     List<Log> selectByExample(LogExample example);
 
     Log selectByPrimaryKey(Integer logId);
-
-    List<Log> selectAllLogByUserId(@Param("用户id") Integer userId);
 
     int updateByExampleSelective(@Param("record") Log record, @Param("example") LogExample example);
 

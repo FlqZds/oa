@@ -554,6 +554,76 @@ public class LogExample {
             addCriterion("log_time not between", value1, value2, "logTime");
             return (Criteria) this;
         }
+
+        public Criteria andLogReceiverIsNull() {
+            addCriterion("log_receiver is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverIsNotNull() {
+            addCriterion("log_receiver is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverEqualTo(String value) {
+            addCriterion("log_receiver =", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverNotEqualTo(String value) {
+            addCriterion("log_receiver <>", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverGreaterThan(String value) {
+            addCriterion("log_receiver >", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverGreaterThanOrEqualTo(String value) {
+            addCriterion("log_receiver >=", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverLessThan(String value) {
+            addCriterion("log_receiver <", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverLessThanOrEqualTo(String value) {
+            addCriterion("log_receiver <=", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverLike(String value) {
+            addCriterion("log_receiver like", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverNotLike(String value) {
+            addCriterion("log_receiver not like", value, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverIn(List<String> values) {
+            addCriterion("log_receiver in", values, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverNotIn(List<String> values) {
+            addCriterion("log_receiver not in", values, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverBetween(String value1, String value2) {
+            addCriterion("log_receiver between", value1, value2, "logReceiver");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogReceiverNotBetween(String value1, String value2) {
+            addCriterion("log_receiver not between", value1, value2, "logReceiver");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

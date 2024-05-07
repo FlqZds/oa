@@ -1,4 +1,4 @@
-package com.fcfz.oa.service;
+package com.fcfz.oa.service.impl;
 
 import com.fcfz.oa.common.ErrInfo;
 import com.fcfz.oa.common.info;
@@ -6,13 +6,13 @@ import com.fcfz.oa.common.utils.MySqlSessionFactory;
 import com.fcfz.oa.entity.Log;
 import com.fcfz.oa.mapper.LogMapper;
 import com.fcfz.oa.mapper.UserMapper;
+import com.fcfz.oa.service.i_log;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.session.SqlSession;
 
-import java.util.Date;
 import java.util.List;
 
-public class logService {
+public class logService implements i_log {
 
     /***
      哪个用户 的 哪个日志界面
@@ -101,9 +101,13 @@ public class logService {
 
 
             int insertResult = logMapper.insertSelective(log);
+            if (insertResult!=1) {
+                throw new ErrInfo("99999","用户注册失败");
+            }
+
             session.commit();
 
-            return null;
+            return new info("200","日志提交成功",null,null,null);
         } catch (Exception e) {
 //事务回滚
             session.rollback();

@@ -6,6 +6,8 @@ import com.fcfz.oa.entity.User;
 import com.fcfz.oa.mapper.LogMapper;
 import com.fcfz.oa.mapper.RoleMapper;
 import com.fcfz.oa.mapper.UserMapper;
+import com.fcfz.oa.service.impl.PowerRoleShow;
+import com.fcfz.oa.service.impl.login;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
@@ -34,6 +36,40 @@ public class test {
 
         String userid="a";
         System.out.println(StringUtils.isNumeric(userid));
+
+    }
+
+    @Test
+    public void testSHowRole() {
+        PowerRoleShow powerRoleShow = new PowerRoleShow();
+        info info = powerRoleShow.showRole("1", "2");
+        System.out.println(info);
+
+
+    }
+
+
+    //    测用户注册
+    @Test
+    public void testInsert(){
+        SqlSession session = MySqlSessionFactory.getSession();
+        login login=new login();
+        try {
+
+            info info = login.registerUser("zds", "123456", "zds13579", "13570897076");
+
+
+            String s = JSON.toJSONString(info);
+
+            System.out.println(s);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+
+            MySqlSessionFactory.closeSession();
+        }
 
     }
 

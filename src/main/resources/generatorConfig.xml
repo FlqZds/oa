@@ -49,8 +49,11 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="oa.log"></table>
-        <table schema="" tableName="oa.role"></table>
-        <table schema="" tableName="oa.user"></table>
+<!--        <table schema="" tableName="oa.log"></table>-->
+<!--        <table schema="" tableName="oa.role"></table>-->
+<!--        <table schema="" tableName="oa.user"></table>-->
+<!--        <table schema="" tableName="oa.power"></table>-->
+<!--        <table schema="" tableName="oa.roletopower"></table>-->
+<!--        <table schema="" tableName="oa.usertorole"></table>-->
     </context>
 </generatorConfiguration>

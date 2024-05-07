@@ -5,7 +5,7 @@ import com.alibaba.fastjson2.util.DateUtils;
 import com.fcfz.oa.common.ErrInfo;
 import com.fcfz.oa.common.info;
 import com.fcfz.oa.entity.Log;
-import com.fcfz.oa.service.logService;
+import com.fcfz.oa.service.impl.logService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

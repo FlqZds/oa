@@ -14,7 +14,7 @@ import java.util.Date;
 public class Log {
     private Integer logId;
 
-    private String logTitle="默认标题";
+    private String logTitle;
 
     private String logUploadfilepath;
 
@@ -24,7 +24,8 @@ public class Log {
 
     private String logContent;
 
-//    日志提交时间
     private Date logTime;
+
+    private String logReceiver;
 
 }

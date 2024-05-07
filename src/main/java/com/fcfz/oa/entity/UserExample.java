@@ -375,66 +375,6 @@ public class UserExample {
             return (Criteria) this;
         }
 
-        public Criteria andUserRoleIsNull() {
-            addCriterion("user_role is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleIsNotNull() {
-            addCriterion("user_role is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleEqualTo(Integer value) {
-            addCriterion("user_role =", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleNotEqualTo(Integer value) {
-            addCriterion("user_role <>", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleGreaterThan(Integer value) {
-            addCriterion("user_role >", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleGreaterThanOrEqualTo(Integer value) {
-            addCriterion("user_role >=", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleLessThan(Integer value) {
-            addCriterion("user_role <", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleLessThanOrEqualTo(Integer value) {
-            addCriterion("user_role <=", value, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleIn(List<Integer> values) {
-            addCriterion("user_role in", values, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleNotIn(List<Integer> values) {
-            addCriterion("user_role not in", values, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleBetween(Integer value1, Integer value2) {
-            addCriterion("user_role between", value1, value2, "userRole");
-            return (Criteria) this;
-        }
-
-        public Criteria andUserRoleNotBetween(Integer value1, Integer value2) {
-            addCriterion("user_role not between", value1, value2, "userRole");
-            return (Criteria) this;
-        }
-
         public Criteria andCreateTimeIsNull() {
             addCriterion("create_time is null");
             return (Criteria) this;
@@ -492,6 +432,76 @@ public class UserExample {
 
         public Criteria andCreateTimeNotBetween(Date value1, Date value2) {
             addCriterion("create_time not between", value1, value2, "createTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelIsNull() {
+            addCriterion("userTel is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelIsNotNull() {
+            addCriterion("userTel is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelEqualTo(String value) {
+            addCriterion("userTel =", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelNotEqualTo(String value) {
+            addCriterion("userTel <>", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelGreaterThan(String value) {
+            addCriterion("userTel >", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelGreaterThanOrEqualTo(String value) {
+            addCriterion("userTel >=", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelLessThan(String value) {
+            addCriterion("userTel <", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelLessThanOrEqualTo(String value) {
+            addCriterion("userTel <=", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelLike(String value) {
+            addCriterion("userTel like", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelNotLike(String value) {
+            addCriterion("userTel not like", value, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelIn(List<String> values) {
+            addCriterion("userTel in", values, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelNotIn(List<String> values) {
+            addCriterion("userTel not in", values, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelBetween(String value1, String value2) {
+            addCriterion("userTel between", value1, value2, "usertel");
+            return (Criteria) this;
+        }
+
+        public Criteria andUsertelNotBetween(String value1, String value2) {
+            addCriterion("userTel not between", value1, value2, "usertel");
             return (Criteria) this;
         }
     }
